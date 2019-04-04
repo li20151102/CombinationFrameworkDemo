@@ -14,9 +14,7 @@ import android.widget.TextView;
 
 import com.example.administrator.myapplication.R;
 import com.example.administrator.myapplication.broadcast.MyReceiver;
-import com.example.administrator.myapplication.chartviewutils.LineChartView;
 import com.example.administrator.myapplication.chartviewutils.PinChart;
-import com.example.administrator.myapplication.utils.StatusBarUtil;
 
 /**
  * Created by Administrator on 2018/12/13.
@@ -29,7 +27,6 @@ public class MyFragment2 extends Fragment implements View.OnClickListener{
     private TextView tvTitle;
     private String content;
     private PinChart pinChart;
-    private LineChartView lineChartView;
 
     private MyReceiver recevier;
     private IntentFilter intentFilter;
@@ -60,8 +57,6 @@ public class MyFragment2 extends Fragment implements View.OnClickListener{
         TextView txt_content = (TextView) view.findViewById(R.id.txt_content);
         txt_content.setText(content);
 
-//        lineChartView=view.findViewById(R.id.lineChartView);
-//        lineChartView.start(10);
         pinChart=view.findViewById(R.id.pinChartView);
         pinChart.start(10);
 
