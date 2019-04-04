@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:background="#fff"
+    android:id="@+id/llactionBar"
+    android:orientation="horizontal">
+    <ImageView
+        android:id="@+id/ivBacks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/backs"/>
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textSize="20dp"
+        android:textColor="#8e8e8e"
+        android:text="标题"/>
+    <ImageView
+        android:id="@+id/ivRightMenus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:src="@mipmap/nexts"/>
+    <TextView
+        android:id="@+id/tvRightSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="#8e8e8e"
+        android:visibility="gone"
+        android:text="保存"/>
+
+</LinearLayout>

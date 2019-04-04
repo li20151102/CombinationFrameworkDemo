@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ccddff"
+    android:orientation="vertical">
+
+    <com.sivin.Banner
+        android:id="@+id/id_banner"
+        android:layout_width="match_parent"
+        android:layout_height="460px"
+        app:banner_pageChangeDuration="300"
+        app:banner_pointAutoPlayInterval="5"
+        app:banner_pointContainerBackground="#00000000"
+        app:banner_pointContainerLeftRightPadding="10dp"
+        app:banner_pointDrawable="@drawable/selector_banner_point"
+        app:banner_pointGravity="right"
+        app:banner_pointLeftRightMargin="3dp"
+        app:banner_pointTopBottomMargin="6dp" />
+
+    <TextView
+        android:id="@+id/txt_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:padding="12dp"
+        android:text="呵呵"
+        android:textColor="#8c8c8c"
+        android:textSize="22sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <GridView
+            android:id="@+id/gview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnWidth="80dp"
+            android:gravity="center"
+            android:numColumns="3" />
+
+    </LinearLayout>
+</LinearLayout>

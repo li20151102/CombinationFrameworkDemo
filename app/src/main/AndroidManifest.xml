@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.administrator.myapplication">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/gjdw_logo"
+        android:label="@string/app_name"
+        android:launchMode="standard"
+        android:roundIcon="@drawable/gjdw_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoBar"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity"/>
+        <activity android:name=".activity.MineInputContentActivity"/>
+        <activity android:name=".activity.MineAboutActivity"/>
+        <activity android:name=".activity.GridViewItemsActivity"/>
+
+        <receiver
+            android:name=".broadcast.MyReceiver"
+            android:enabled="true"
+            android:exported="true"/>
+    </application>
+
+</manifest>
